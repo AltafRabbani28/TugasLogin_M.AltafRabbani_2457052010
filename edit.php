@@ -28,7 +28,6 @@ $query = mysqli_query(
 
 $data = mysqli_fetch_assoc($query);
 
-// proses update
 if (isset($_POST['update'])) {
 
     $nama = $_POST['nama'];
