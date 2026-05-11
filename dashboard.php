@@ -35,7 +35,7 @@ $nama = $_SESSION['nama'];
 <h2>Selamat Datang, <?php echo $nama; ?></h2>
 
 <?php
-// jika admin
+
 if ($nama == 'admin') {
 
     echo "<h3>Data User</h3>";
