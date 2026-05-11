@@ -12,7 +12,6 @@ if (isset($_POST['login'])) {
     $nama = $_POST['nama'];
     $password = $_POST['password'];
 
-    // cek user
     $query = mysqli_query(
         $conn,
         "SELECT * FROM users WHERE nama='$nama'"
@@ -23,7 +22,6 @@ if (isset($_POST['login'])) {
 
         $data = mysqli_fetch_assoc($query);
 
-        // cek password hash
         if (
             password_verify(
                 $password,
