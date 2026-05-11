@@ -12,7 +12,6 @@ if (
     exit;
 }
 
-// cek id
 if (!isset($_GET['id'])) {
 
     header("Location: dashboard.php");
